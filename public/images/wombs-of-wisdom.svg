@@ -1,0 +1,10 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#F4FBFF"/>
+  <circle cx="360" cy="350" r="210" fill="#38BDF8" fill-opacity="0.2"/>
+  <circle cx="760" cy="300" r="180" fill="#0F8B8D" fill-opacity="0.18"/>
+  <rect x="230" y="180" width="740" height="420" rx="36" fill="#0B1F33"/>
+  <path d="M470 330C470 293.549 499.549 264 536 264H664C700.451 264 730 293.549 730 330V450C730 486.451 700.451 516 664 516H536C499.549 516 470 486.451 470 450V330Z" fill="#F8FAFC" fill-opacity="0.12"/>
+  <path d="M600 250L640 340H560L600 250Z" fill="#38BDF8"/>
+  <rect x="470" y="360" width="260" height="90" rx="18" fill="#0F8B8D" fill-opacity="0.9"/>
+  <text x="600" y="710" text-anchor="middle" fill="#0B1F33" font-family="Arial, sans-serif" font-size="46" font-weight="700">Wombs of Wisdom</text>
+</svg>

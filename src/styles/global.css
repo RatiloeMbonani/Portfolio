@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@500;600;700;800&display=swap');
+
+:root {
+  --deep-navy: #0B1F33;
+  --teal: #0F8B8D;
+  --sky-blue: #38BDF8;
+  --off-white: #F8FAFC;
+  --white: #FFFFFF;
+  --cool-grey: #CBD5E1;
+  --charcoal: #1E293B;
+  --primary-border: rgba(11, 31, 51, 0.12);
+  --shadow-soft: 0 18px 28px rgba(11, 31, 51, 0.08);
+  --shadow-card: 0 22px 38px rgba(11, 31, 51, 0.12);
+  --radius-lg: 28px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
+  --container-width: 1180px;
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Lato', sans-serif;
+  --transition: 220ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background: var(--off-white);
+  color: var(--charcoal);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(56, 189, 248, 0.7);
+  outline-offset: 3px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(var(--container-width), calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-main {
+  min-height: calc(100vh - 200px);
+}
+
+.page-shell {
+  padding: 4rem 0 5rem;
+}
+
+.section-block {
+  display: block;
+}
+
+.section-heading {
+  margin-bottom: 2.5rem;
+}
+
+.section-heading.narrow {
+  max-width: 760px;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--teal);
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+.brand-text strong {
+  font-family: var(--heading-font);
+  color: var(--deep-navy);
+  margin: 0 0 1rem;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 4vw, 4.25rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  color: var(--charcoal);
+}
+
+.intro-text,
+.lead {
+  font-size: 1.08rem;
+  color: rgba(30, 41, 59, 0.85);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  border-radius: 999px;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid transparent;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button.primary {
+  background: var(--teal);
+  color: var(--white);
+  box-shadow: 0 10px 24px rgba(15, 139, 141, 0.18);
+}
+
+.button.primary:hover {
+  background: #67d6db;
+  color: var(--deep-navy);
+}
+
+.button.secondary {
+  background: transparent;
+  color: var(--deep-navy);
+  border-color: rgba(11, 31, 51, 0.85);
+}
+
+.button.secondary:hover {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: rgba(56, 189, 248, 0.45);
+  color: var(--deep-navy);
+}
+
+.button.tertiary {
+  background: transparent;
+  border-color: rgba(11, 31, 51, 0.18);
+  color: var(--deep-navy);
+}
+
+.full-width {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .page-shell {
+    padding: 3rem 0 4rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

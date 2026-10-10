@@ -1,0 +1,123 @@
+import { useEffect, useMemo, useState } from 'react'
+import { ArrowUpRight } from 'lucide-react'
+import { projectFilters, projects } from '../data/projects'
+
+function Projects() {
+  const [activeFilter, setActiveFilter] = useState('All')
+  const [selectedProject, setSelectedProject] = useState(null)
+
+  useEffect(() => {
+    document.title = 'Projects | Ratiloe Lebogang'
+    const metaDescription = document.querySelector('meta[name="description"]')
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        'content',
+        'Explore Ratiloe Lebogang’s selected projects spanning web development, multimedia design and digital problem solving.'
+      )
+    }
+  }, [])
+
+  const filteredProjects = useMemo(() => {
+    if (activeFilter === 'All') return projects
+    return projects.filter((project) => project.category === activeFilter)
+  }, [activeFilter])
+
+  useEffect(() => {
+    if (selectedProject && !filteredProjects.some((project) => project.id === selectedProject.id)) {
+      setSelectedProject(null)
+    }
+  }, [filteredProjects, selectedProject])
+
+  return (
+    <div className="page-shell projects-page">
+      <section className="container section-block">
+        <div className="section-heading narrow">
+          <p className="eyebrow">PROJECTS</p>
+          <h1>My Projects</h1>
+          <p className="intro-text">
+            Explore selected projects that reflect my development journey, technical interests,
+            design skills and approach to solving real-world problems through technology.
+          </p>
+        </div>
+
+        <div className="filter-row" aria-label="Project filters">
+          {projectFilters.map((filter) => (
+            <button
+              key={filter}
+              type="button"
+              className={filter === activeFilter ? 'filter-button active' : 'filter-button'}
+              onClick={() => {
+                setActiveFilter(filter)
+                setSelectedProject(null)
+              }}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        <div className="projects-grid">
+          {filteredProjects.map((project) => (
+            <article key={project.id} className="project-card">
+              <img src={project.image} alt={project.title} className="project-image" />
+              <div className="project-body">
+                <span className="project-category">{project.category}</span>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+
+                <div className="project-tags">
+                  {project.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
+
+                <div className="project-actions">
+                  <button type="button" className="button tertiary" onClick={() => setSelectedProject(project)}>
+                    Learn More
+                  </button>
+                  <a className="button secondary" href={project.link} target="_blank" rel="noreferrer">
+                    View Project <ArrowUpRight size={16} />
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        {selectedProject && (
+          <div className="project-detail">
+            <div className="detail-header">
+              <span className="project-category">{selectedProject.category}</span>
+              <h2>{selectedProject.title}</h2>
+            </div>
+
+            <div className="detail-grid">
+              <div>
+                <h3>The problem</h3>
+                <p>{selectedProject.problem}</p>
+              </div>
+              <div>
+                <h3>The solution</h3>
+                <p>{selectedProject.solution}</p>
+              </div>
+              <div>
+                <h3>My contribution</h3>
+                <p>{selectedProject.contribution}</p>
+              </div>
+              <div>
+                <h3>Technologies used</h3>
+                <p>{selectedProject.technologies.join(', ')}</p>
+              </div>
+              <div>
+                <h3>Lessons learned</h3>
+                <p>{selectedProject.lessons}</p>
+              </div>
+            </div>
+          </div>
+        )}
+      </section>
+    </div>
+  )
+}
+
+export default Projects
