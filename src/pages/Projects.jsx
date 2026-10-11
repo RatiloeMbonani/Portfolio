@@ -40,26 +40,16 @@ function Projects() {
           </p>
         </div>
 
-        <div className="filter-row" aria-label="Project filters">
-          {projectFilters.map((filter) => (
-            <button
-              key={filter}
-              type="button"
-              className={filter === activeFilter ? 'filter-button active' : 'filter-button'}
-              onClick={() => {
-                setActiveFilter(filter)
-                setSelectedProject(null)
-              }}
-            >
-              {filter}
-            </button>
-          ))}
-        </div>
+       
 
         <div className="projects-grid">
           {filteredProjects.map((project) => (
             <article key={project.id} className="project-card">
-              <img src={project.image} alt={project.title} className="project-image" />
+              <img
+                src={project.image}
+                alt={project.title}
+                className={`project-image${project.id === 'digital-stacked-brand-guide' ? ' project-image--wide' : ''}`}
+              />
               <div className="project-body">
                 <span className="project-category">{project.category}</span>
                 <h3>{project.title}</h3>
@@ -72,9 +62,6 @@ function Projects() {
                 </div>
 
                 <div className="project-actions">
-                  <button type="button" className="button tertiary" onClick={() => setSelectedProject(project)}>
-                    Learn More
-                  </button>
                   <a className="button secondary" href={project.link} target="_blank" rel="noreferrer">
                     View Project <ArrowUpRight size={16} />
                   </a>

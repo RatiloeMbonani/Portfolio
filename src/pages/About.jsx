@@ -24,7 +24,7 @@ function About() {
         <div className="about-grid">
           <div className="visual-card" aria-label="About visual card">
             <div className="visual-panel">
-              <span className="visual-label">Ratiloe</span>
+              <img src = "/images/Ratiloe.jpeg" alt="Ratiloe Lebogang"/>
             </div>
           </div>
 

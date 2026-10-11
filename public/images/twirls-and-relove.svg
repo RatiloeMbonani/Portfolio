@@ -1,9 +1,0 @@
-<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="800" fill="#FFF9FB"/>
-  <rect x="150" y="140" width="900" height="520" rx="40" fill="#0B1F33"/>
-  <rect x="240" y="210" width="230" height="340" rx="24" fill="#F8FAFC" fill-opacity="0.08"/>
-  <rect x="510" y="210" width="240" height="170" rx="24" fill="#38BDF8" fill-opacity="0.8"/>
-  <rect x="510" y="410" width="240" height="140" rx="24" fill="#0F8B8D" fill-opacity="0.8"/>
-  <rect x="790" y="210" width="180" height="330" rx="24" fill="#F8FAFC" fill-opacity="0.12"/>
-  <text x="600" y="710" text-anchor="middle" fill="#0B1F33" font-family="Arial, sans-serif" font-size="42" font-weight="700">Twirls &amp; Relove</text>
-</svg>

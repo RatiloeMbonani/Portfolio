@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Github, Linkedin } from 'lucide-react'
 
 const initialForm = {
   name: '',
@@ -73,7 +74,7 @@ function Contact() {
           <aside className="contact-info">
             <div className="info-item">
               <span>Email</span>
-              <a href="mailto:hello@example.com">hello@example.com</a>
+              <a href="mailto:mratwalebogang@gmail.com">mratwalebogang@gmail.com</a>
             </div>
             <div className="info-item">
               <span>Location</span>
@@ -81,11 +82,17 @@ function Contact() {
             </div>
             <div className="info-item">
               <span>LinkedIn</span>
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">linkedin.com/in/your-profile</a>
+              <a className="social-link" href="https://www.linkedin.com/in/RatiloeMbonani" target="_blank" rel="noreferrer">
+                <Linkedin size={20} aria-hidden="true" />
+                linkedin.com/in/RatiloeMbonani
+              </a>
             </div>
             <div className="info-item">
               <span>GitHub</span>
-              <a href="https://github.com" target="_blank" rel="noreferrer">github.com/your-profile</a>
+              <a className="social-link" href="https://github.com/RatiloeMbonani" target="_blank" rel="noreferrer">
+                <Github size={20} aria-hidden="true" />
+                github.com/RatiloeMbonani
+              </a>
             </div>
           </aside>
 
@@ -110,7 +117,7 @@ function Contact() {
 
             <div className="field-group">
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" rows="5" value={formData.message} onChange={handleChange} aria-invalid={Boolean(errors.message)} />
+              <textarea id="message" name="message" rows="4" value={formData.message} onChange={handleChange} aria-invalid={Boolean(errors.message)} />
               {errors.message && <span className="error-message">{errors.message}</span>}
             </div>
 

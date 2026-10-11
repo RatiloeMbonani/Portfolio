@@ -1,7 +1,11 @@
 function ProjectCard({ project }) {
   return (
     <article className="project-card">
-      <img src={project.image} alt={project.title} className="project-image" />
+      <img
+        src={project.image}
+        alt={project.title}
+        className={`project-image${project.id === 'digital-stacked-brand-guide' ? ' project-image--wide' : ''}`}
+      />
       <div className="project-body">
         <span className="project-category">{project.category}</span>
         <h3>{project.title}</h3>
