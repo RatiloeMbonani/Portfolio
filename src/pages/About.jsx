@@ -38,15 +38,17 @@ function About() {
               into functional applications.
             </p>
             <p>
-              I enjoy developing solutions that are visually engaging, functional, responsive
-              and user-centred. Through academic projects, hackathons and personal projects,
-              I continue to strengthen my technical skills and explore practical approaches to
-              solving problems.
+             I enjoy taking an idea from concept and design through to a working digital solution. 
+             I actively participate in hackathons, tech events, workshops and developer communities,
+              where I get to explore new technologies, collaborate with different people, solve real-world 
+              problems and challenge myself outside the classroom. Every project and event is an opportunity 
+              to learn something new and become a better developer. 
             </p>
             <p>
-              My career goal is to grow as a Full-Stack Developer, with a particular interest
-              in the mining and mining-technology industry and how digital solutions can
-              improve processes, efficiency and access to information.
+           My goal is to grow into a well-rounded Full-Stack Developer who combines strong technical 
+           skills with a solid understanding of design, and user experience. I’m constantly looking 
+           for opportunities to up skill, experiment, build meaningful projects and stay curious about 
+           what’s next in technology.
             </p>
           </div>
         </div>

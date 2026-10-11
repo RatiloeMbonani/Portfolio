@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(248, 250, 252, 0.88);
+  background: var(--header-surface);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--primary-border);
 }
@@ -46,6 +46,12 @@
 .nav-panel {
   display: flex;
   align-items: center;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .nav-list {
@@ -101,10 +107,29 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(11, 31, 51, 0.14);
+  border: 1px solid var(--primary-border);
   border-radius: 12px;
   background: var(--white);
   color: var(--deep-navy);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  border: 1px solid var(--primary-border);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--deep-navy);
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.theme-toggle:hover,
+.menu-toggle:hover {
+  border-color: var(--teal);
 }
 
 .site-footer {
@@ -119,7 +144,7 @@
   text-align: center;
   gap: 1rem;
   min-height: 72px;
-  color: rgba(11, 31, 51, 0.8);
+  color: var(--muted-text);
 }
 
 .footer-content p {
@@ -129,7 +154,7 @@
 
 .project-card {
   background: var(--white);
-  border: 1px solid rgba(11, 31, 51, 0.08);
+  border: 1px solid var(--primary-border);
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: var(--shadow-soft);
@@ -172,7 +197,7 @@
 .project-tags span {
   padding: 0.4rem 0.7rem;
   border-radius: 999px;
-  background: rgba(11, 31, 51, 0.05);
+  background: var(--surface-muted);
   color: var(--charcoal);
   font-size: 0.78rem;
   font-weight: 700;
@@ -191,6 +216,7 @@
 
   .menu-toggle {
     display: inline-flex;
+    margin-left: auto;
   }
 
   .nav-panel {
@@ -200,7 +226,7 @@
     top: 100%;
     display: none;
     padding: 0.75rem 1rem 1rem;
-    background: rgba(255, 255, 255, 0.98);
+    background: var(--menu-surface);
     border-bottom: 1px solid var(--primary-border);
   }
 

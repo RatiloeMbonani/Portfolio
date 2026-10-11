@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Github, Linkedin } from 'lucide-react'
 
 const initialForm = {
   name: '',
@@ -73,7 +72,7 @@ function Contact() {
         <div className="contact-grid">
           <aside className="contact-info">
             <div className="info-item">
-              <span>Email</span>
+              <span>Email:</span>
               <a href="mailto:mratwalebogang@gmail.com">mratwalebogang@gmail.com</a>
             </div>
             <div className="info-item">
@@ -81,16 +80,14 @@ function Contact() {
               <p>Cape Town, South Africa.</p>
             </div>
             <div className="info-item">
-              <span>LinkedIn</span>
+              <span>LinkedIn:</span>
               <a className="social-link" href="https://www.linkedin.com/in/RatiloeMbonani" target="_blank" rel="noreferrer">
-                <Linkedin size={20} aria-hidden="true" />
                 linkedin.com/in/RatiloeMbonani
               </a>
             </div>
             <div className="info-item">
               <span>GitHub</span>
               <a className="social-link" href="https://github.com/RatiloeMbonani" target="_blank" rel="noreferrer">
-                <Github size={20} aria-hidden="true" />
                 github.com/RatiloeMbonani
               </a>
             </div>

@@ -9,6 +9,10 @@
   --cool-grey: #CBD5E1;
   --charcoal: #1E293B;
   --primary-border: rgba(11, 31, 51, 0.12);
+  --muted-text: rgba(30, 41, 59, 0.85);
+  --surface-muted: rgba(11, 31, 51, 0.05);
+  --header-surface: rgba(248, 250, 252, 0.88);
+  --menu-surface: rgba(255, 255, 255, 0.98);
   --shadow-soft: 0 18px 28px rgba(11, 31, 51, 0.08);
   --shadow-card: 0 22px 38px rgba(11, 31, 51, 0.12);
   --radius-lg: 28px;
@@ -18,6 +22,24 @@
   --heading-font: 'Montserrat', sans-serif;
   --body-font: 'Lato', sans-serif;
   --transition: 220ms ease;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --deep-navy: #e5edf5;
+  --teal: #50c9c0;
+  --sky-blue: #54bfe9;
+  --off-white: #101a24;
+  --white: #182633;
+  --cool-grey: #647587;
+  --charcoal: #d5e0e8;
+  --primary-border: rgba(226, 232, 240, 0.14);
+  --muted-text: #aebdca;
+  --surface-muted: rgba(226, 232, 240, 0.08);
+  --header-surface: rgba(16, 26, 36, 0.9);
+  --menu-surface: rgba(24, 38, 51, 0.98);
+  --shadow-soft: 0 18px 28px rgba(0, 0, 0, 0.18);
+  --shadow-card: 0 22px 38px rgba(0, 0, 0, 0.28);
 }
 
 html {
@@ -35,6 +57,7 @@ body {
   color: var(--charcoal);
   line-height: 1.6;
   min-height: 100vh;
+  transition: background-color var(--transition), color var(--transition);
 }
 
 img {
@@ -131,7 +154,7 @@ p {
 .intro-text,
 .lead {
   font-size: 1.08rem;
-  color: rgba(30, 41, 59, 0.85);
+  color: var(--muted-text);
 }
 
 .button {
@@ -166,7 +189,7 @@ p {
 .button.secondary {
   background: transparent;
   color: var(--deep-navy);
-  border-color: rgba(11, 31, 51, 0.85);
+  border-color: var(--primary-border);
 }
 
 .button.secondary:hover {
@@ -177,7 +200,7 @@ p {
 
 .button.tertiary {
   background: transparent;
-  border-color: rgba(11, 31, 51, 0.18);
+  border-color: var(--primary-border);
   color: var(--deep-navy);
 }
 
