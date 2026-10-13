@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
-import { GraduationCap, Rocket } from 'lucide-react'
+import { Download, Eye } from 'lucide-react'
+
+const cvPath = '/assets/CV.pdf'
 
 function About() {
   useEffect(() => {
@@ -29,7 +31,7 @@ function About() {
           </div>
 
           <div className="about-copy">
-            <h2>Combining creativity, technology and problem-solving.</h2>
+            <h2>Where Code Meets Creativity.</h2>
             <p>
               I&apos;m Ratiloe, a Full-Stack Developer and Multimedia Designer passionate about
               bringing together technology, creativity and problem-solving. My background in
@@ -50,6 +52,19 @@ function About() {
            for opportunities to up skill, experiment, build meaningful projects and stay curious about 
            what’s next in technology.
             </p>
+            <p> I am particularly interested in exploring how technology can create practical solutions in 
+              industries such as mining, and other sectors where innovation can make a meaningful 
+              difference. As I continue to grow both technically and creatively, I aim to contribute to projects 
+              that are not only functional and visually engaging but also accessible, reliable and centred around 
+              the needs of the people who use them. </p>
+            <div className="hero-actions">
+              <a className="button primary" href={cvPath} download>
+                <Download size={18} /> Download CV
+              </a>
+              <a className="button secondary" href={cvPath} target="_blank" rel="noreferrer">
+                <Eye size={18} /> View CV
+              </a>
+            </div>
           </div>
         </div>
       </section>

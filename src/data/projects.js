@@ -2,81 +2,59 @@ export const projects = [
   {
     id: 'varsity path',
     title: 'Varsity Path',
-    description: 'React-based crime-safety application concept designed to help residents report issues and track local safety information in real time.',
+    description: 'An educational platform concept designed to help students navigate their academic journey and explore opportunities for further education. The project focuses on making educational information more accessible and helping students make informed decisions about their future. It demonstrates my interest in developing user-centred digital solutions that address real-world challenges in education.',
     image: '/images/varsity-path.png',
     link: 'https://varsitypath.netlify.app',
     tags: ['React', 'JavaScript', 'CSS'],
-    problem: 'Communities need a simple way to spot local risk trends and report safety concerns without relying on fragmented communication channels.',
-    solution: 'A concept dashboard with reporting flows, incident overview cards and a fast user journey focused on accessibility and clarity.',
-    contribution: 'I designed the interface, mapped the user flow and built the responsive React front-end concept for a safety-first experience.',
+    contribution: 'I designed the interface, mapped the user flow and built the responsive React front-end concept to make educational information more accessible.',
     technologies: ['React', 'JavaScript', 'CSS', 'Figma'],
-    lessons: 'This project strengthened my approach to designing for trust, clarity and emergency-oriented user experiences.'
   },
   {
     id: 'digital-stacked-brand-guide',
     title: 'Digital Stacked Brand Guide',
-    description: 'A multimedia branding and brand-guide project built to define visual identity, messaging and digital design standards for a modern brand.',
+    description: 'Digital Stacked is a branding and multimedia design project focused on developing a consistent and professional visual identity for a technology brand. The project explores brand identity, colour systems, typography, visual communication and digital design applications. It demonstrates my ability to combine creativity, design principles and digital communication to create a cohesive brand experience.',
     image: '/images/digital-stacked.png',
     link: 'https://placeholder.example.com/digital-stacked-brand-guide',
     tags: ['Branding', 'Adobe Suite', 'Design System'],
-    problem: 'Businesses often struggle to keep their visual identity consistent across digital touchpoints and communication materials.',
-    solution: 'I created a structured brand guide with typography, colour guidance, logo use and layout direction to support consistent application.',
-    contribution: 'I developed the visual identity system, designed the brand assets and created a clear guide for use across digital channels.',
     technologies: ['Adobe Illustrator', 'Adobe InDesign', 'Brand Strategy'],
-    lessons: 'The project reinforced how systemised design decisions improve brand recognition and design consistency.'
   },
   {
     id: 'wombs-of-wisdom',
     title: 'Wombs of Wisdom',
-    description: 'AI-powered knowledge platform concept developed for the GirlCode hackathon to support community learning and access to trusted information.',
+    description: 'Wombs of Wisdom is an AI-powered knowledge platform concept developed during the GirlCode hackathon. The platform aims to make African women’s intergenerational knowledge more accessible, covering topics such as motherhood, personal care, health awareness, food and nutrition.',
     image: '/images/wombs-of-wisdom.png',
     link: 'https://wombs-ofwisdom.netlify.app',
     tags: ['AI', 'Hackathon', 'UX Research'],
-    problem: 'Women and communities often need easier access to trusted educational knowledge, particularly in underrepresented and information-scarce contexts.',
-    solution: 'The concept focused on an AI-assisted content experience that presented knowledge in an approachable and structured way.',
-    contribution: 'I contributed to the concept design, UX thinking and presentation materials for a community-centred, accessible platform.',
     technologies: ['React', 'AI Concept', 'Figma','MySQL'],
-    lessons: 'This experience highlighted the value of combining technology with empathy, inclusion and audience-specific problem framing.'
+
   },
   {
     id: 'monarch-playing-card',
     title: 'Monarch Playing Card',
-    description: 'A multimedia design and branding project creating a custom playing card aesthetic and print-ready identity exploration.',
+    description: 'Monarch Playing Card Co. is a multimedia design and branding project centred on creating a distinctive visual identity for a playing card brand. The project focuses on visual consistency, typography, colour selection and brand presentation to establish a recognisable identity. It demonstrates my creative approach to visual storytelling and my ability to apply multimedia design principles to a branded product concept.',
     image: '/images/monarch.png',
     link: 'https://placeholder.example.com/monarch-playing-card',
     tags: ['Print Design', 'Branding', 'Illustration'],
-    problem: 'A tailored product identity needed to stand out with a premium, memorable aesthetic while staying production-friendly.',
-    solution: 'I developed a thematic identity system with typography, iconography and card layout decisions that supported the brand story.',
-    contribution: 'I created the art direction, design assets and layout for a polished, high-end card concept.',
     technologies: ['Adobe Illustrator', 'Adobe InDesign', 'Print Design'],
-    lessons: 'This project sharpened my ability to balance creative storytelling with practical production constraints.'
+
   },
   {
     id: 'twirls-and-relove',
     title: 'Twirls & Relove',
-    description: 'React-based pre-owned matric dance dress website concept focused on styling, discovery and a smoother second-hand shopping experience.',
+    description: 'Twirl & Relove is a React-based website concept for a pre-owned matric dance dress platform that encourages the resale and reuse of formalwear. The platform aims to connect people looking for affordable occasion dresses with those who want to give their dresses a second life. The project combines web development and user-centred design to explore a practical, accessible and more sustainable shopping experience.',
     image: '/images/twirlrelove.png',
     link: 'https://twirlrelove.netlify.app',
     tags: ['React', 'E-commerce', 'UI Design'],
-    problem: 'Pre-owned event fashion lacks a polished shopping experience that balances trust, discovery and a visually engaging browsing flow.',
-    solution: 'The concept focused on a simple product browsing experience, category-driven discovery and a clean storefront layout.',
-    contribution: 'I designed the front-end interface and built a responsive React concept for product discovery and presentation.',
     technologies: ['React', 'JavaScript', 'CSS', 'Figma'],
-    lessons: 'The project deepened my understanding of building user-friendly commerce experiences with discoverability in mind.'
   },
   {
     id: 'yugen',
     title: 'YŪGEN',
-    description: 'Japanese fine-dining website and web-design project exploring elegance, appetite appeal and thoughtful user experience for an upscale dining brand.',
+    description: 'YŪGEN is a Japanese fine-dining website and web design project inspired by the elegance and simplicity of Japanese dining culture. The design focuses on creating a refined digital experience through thoughtful typography, visual presentation, structured content and a cohesive aesthetic. The project demonstrates my ability to translate a brand concept into a polished website experience while applying multimedia design principles to digital interfaces.',
     image: '/images/yugen.png',
     link: 'https://yugenrestaurant.netlify.app',
     tags: ['Web Design', 'Brand Experience', 'UX'],
-    problem: 'Luxury dining brands need a digital presence that communicates atmosphere and experience before a guest ever walks in.',
-    solution: 'I designed a refined web experience using elegant layout, mood-driven visuals and a clear brand story that reflects the restaurant concept.',
-    contribution: 'I created the visual direction, page structure and design system for a premium, immersive web experience.',
-    technologies: ['HTML', 'TailwindCSS', 'Figma', 'Adobe Illustrator'],
-    lessons: 'This project reinforced how design choices influence emotion, perception and brand trust in digital storytelling.'
+    technologies: ['HTML', 'TailwindCSS', 'Figma', 'WordPress'],
+
   }
 ]
-
-export const projectFilters = ['All', 'Development', 'Design', 'Hackathon']

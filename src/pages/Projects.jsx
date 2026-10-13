@@ -1,9 +1,8 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ArrowUpRight } from 'lucide-react'
-import { projectFilters, projects } from '../data/projects'
+import { projects } from '../data/projects'
 
 function Projects() {
-  const [activeFilter, setActiveFilter] = useState('All')
   const [selectedProject, setSelectedProject] = useState(null)
 
   useEffect(() => {
@@ -17,16 +16,11 @@ function Projects() {
     }
   }, [])
 
-  const filteredProjects = useMemo(() => {
-    if (activeFilter === 'All') return projects
-    return projects.filter((project) => project.category === activeFilter)
-  }, [activeFilter])
-
   useEffect(() => {
-    if (selectedProject && !filteredProjects.some((project) => project.id === selectedProject.id)) {
+    if (selectedProject && !projects.some((project) => project.id === selectedProject.id)) {
       setSelectedProject(null)
     }
-  }, [filteredProjects, selectedProject])
+  }, [selectedProject])
 
   return (
     <div className="page-shell projects-page">
@@ -43,7 +37,7 @@ function Projects() {
        
 
         <div className="projects-grid">
-          {filteredProjects.map((project) => (
+          {projects.map((project) => (
             <article key={project.id} className="project-card">
               <img
                 src={project.image}
@@ -51,7 +45,6 @@ function Projects() {
                 className={`project-image${project.id === 'digital-stacked-brand-guide' ? ' project-image--wide' : ''}`}
               />
               <div className="project-body">
-                <span className="project-category">{project.category}</span>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
 
@@ -74,7 +67,6 @@ function Projects() {
         {selectedProject && (
           <div className="project-detail">
             <div className="detail-header">
-              <span className="project-category">{selectedProject.category}</span>
               <h2>{selectedProject.title}</h2>
             </div>
 

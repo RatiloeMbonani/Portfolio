@@ -7,7 +7,6 @@ function ProjectCard({ project }) {
         className={`project-image${project.id === 'digital-stacked-brand-guide' ? ' project-image--wide' : ''}`}
       />
       <div className="project-body">
-        <span className="project-category">{project.category}</span>
         <h3>{project.title}</h3>
         <p>{project.description}</p>
 
