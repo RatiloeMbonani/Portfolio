@@ -52,7 +52,7 @@ function Contact() {
       return
     }
 
-    setStatus('This form has been validated and is ready to connect to a working backend or email service.')
+    setStatus('Thank you for your message! I will get back to you as soon as possible.')
     setFormData(initialForm)
   }
 

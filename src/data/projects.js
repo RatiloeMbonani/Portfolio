@@ -14,7 +14,7 @@ export const projects = [
     title: 'Digital Stacked Brand Guide',
     description: 'Digital Stacked is a branding and multimedia design project focused on developing a consistent and professional visual identity for a technology brand. The project explores brand identity, colour systems, typography, visual communication and digital design applications. It demonstrates my ability to combine creativity, design principles and digital communication to create a cohesive brand experience.',
     image: '/images/digital-stacked.png',
-    link: 'https://placeholder.example.com/digital-stacked-brand-guide',
+    link: 'https://github.com/RatiloeMbonani/Digital-Stacked-Brand-Identity-and-Strategy',
     tags: ['Branding', 'Adobe Suite', 'Design System'],
     technologies: ['Adobe Illustrator', 'Adobe InDesign', 'Brand Strategy'],
   },
@@ -33,7 +33,7 @@ export const projects = [
     title: 'Monarch Playing Card',
     description: 'Monarch Playing Card Co. is a multimedia design and branding project centred on creating a distinctive visual identity for a playing card brand. The project focuses on visual consistency, typography, colour selection and brand presentation to establish a recognisable identity. It demonstrates my creative approach to visual storytelling and my ability to apply multimedia design principles to a branded product concept.',
     image: '/images/monarch.png',
-    link: 'https://placeholder.example.com/monarch-playing-card',
+    link: 'https://github.com/RatiloeMbonani/Monarch-Playing-Card-Co-Markerting-Collateral-Design',
     tags: ['Print Design', 'Branding', 'Illustration'],
     technologies: ['Adobe Illustrator', 'Adobe InDesign', 'Print Design'],
 

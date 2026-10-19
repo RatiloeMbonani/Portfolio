@@ -108,12 +108,12 @@ function Home() {
           </p>
 
           <div className="hero-actions">
-            <a className="button primary" href="#projects">
-              View My Work <ArrowRight size={18} />
-            </a>
-            <a className="button secondary" href="#contact">
+            <Link className="button primary" to="/projects">
+          View My Work <ArrowRight size={18} />
+           </Link>
+            <Link className="button secondary" to="/contact ">
               Let&apos;s Talk
-            </a>
+            </Link>
           </div>
         </div>
 
